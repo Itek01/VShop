@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <meta charset = "UTF-8"/>
+        <title> Assignment 1 </title>
+        <style type="text/css">
+            h1 {color:#0d0d0d; font-weight: 1000px; text-align:start;} 
+            body {background-color: #e6f2ff;}
+        </style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header style="background-color: #F65058DA;">
+            <h1 style="font-size: 35px; font-family: 'Courier New', Courier, monospace;">
+                <a href="webpage.html">
+                    <img src="cart.png" width="50px" height="50px"> </img>
+                </a>
+                Welcome to VShop! 
+            </h1>
+            <nav>
+                <ul class = "nav__links">
+                    <li> <a href="vegetables.html"> Vegetables and Fruits </a></li>
+                    <li> <a href="dairy.html"> Dairy and Eggs </a></li>
+                    <li> <a href="beverages.html"> Beverages </a></li>
+                    <li> <a href="essentials.html"> Essentials </a></li>
+                </ul>
+            </nav>
+            <ul>
+                <a class = "cta" href="#"><button>Account</button></a>
+                <a class = "cta" href="#"><button>Check Out</button></a>
+            </ul>
+            
+        </header>
+
+        <section class="product-list" >
+            <div class="container">
+                <div class="card">
+                    <div class="title"> One kg of Broccoli  </div>
+
+                    <div class="image" id="imageBox"> 
+                        <p class="descriptionOff1" id="descriptionId1">
+                            $3.50 per kg </br></br>
+                            Broccoli is a form of a cultivated cruciferous plant. It is terrific 
+                            steamed as a side dish or raw in a salad.
+                            </br>*Only purchasable per kilogram
+                        </p>
+
+                        <img src="assets\broccoli.png" class="imgOn1" id="imageId1"> </img>
+                        
+                    </div>
+
+                    <div class="buttons">
+                        <div>
+                            <button class="info-btn" id="infoBtn" onclick="handleInfo(0)">
+                                Info
+                                <script src="functions.js"></script>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class="add-btn" value="3.50" onclick="">
+                                Add to Cart
+                                <script src="functions.js"></script>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <div class="title"> One kg of Tomatoes  </div>
+
+                    <div class="image" id="imageBox"> 
+                        <p class="descriptionOff1" id="descriptionId1">
+                            2.79$ per kg </br></br>
+                            Tomatoes have red skin and a juicy taste excellent for salads. 
+                            FRESHNESS GUARANTEED
+                            </br>*Only purchasable per kilogram
+                        </p>
+
+                        <img src="assets\tomato.png" class="imgOn1" id="imageId1"> </img>
+                        
+                    </div>
+
+                    <div class="buttons">
+                        <div>
+                            <button class="info-btn" id="infoBtn" onclick="handleInfo(1)">
+                                Info
+                                <script src="functions.js"></script>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="title"> One Watermelon  </div>
+
+                    <div class="image" id="imageBox"> 
+                        <p class="descriptionOff1" id="descriptionId1">
+                            5.99$ per kg </br></br>
+                            Seedless watermelon is a refreshing and 
+                            tasty treat the whole family can enjoy. Average
+                             weight per watermelon is 11 lb.
+                        </p>
+
+                        <img src="assets\watermelon.png" class="imgOn1" id="imageId1"> </img>
+                        
+                    </div>
+
+                    <div class="buttons">
+                        <div>
+                            <button class="info-btn" id="infoBtn" onclick="handleInfo(2)">
+                                Info
+                                <script src="functions.js"></script>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="card">
+                    <div class="title"> One kg of Bananas  </div>
+
+                    <div class="image" id="imageBox"> 
+                        <p class="descriptionOff1" id="descriptionId1">
+                            2.59$ per kg </br></br>
+                            The banana is a popular choice for breakfast,
+                            snacks or any time of the day. The vibrant yellow
+                            peel provides natural protection to the fruit.
+                            </br>*Only purchasable per kilogram
+                        </p>
+
+                        <img src="assets\bananas.png" class="imgOn1" id="imageId1"> </img>
+                        
+                    </div>
+
+                    <div class="buttons">
+                        <div>
+                            <button class="info-btn" id="infoBtn" onclick="handleInfo(3)">
+                                Info
+                                <script src="functions.js"></script>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+    </body>
+    main page
+</html>

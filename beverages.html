@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <meta charset = "UTF-8"/>
+        <title> Assignment 1 </title>
+        <style type="text/css">
+            h1 {color:#0d0d0d; font-weight: 1000px; text-align:start;} 
+            body {background-color: #e6f2ff;}
+        </style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header style="background-color: #F65058DA;">
+            <h1 style="font-size: 35px; font-family: 'Courier New', Courier, monospace;">
+                <a href="webpage.html">
+                    <img src="cart.png" width="50px" height="50px"> </img>
+                </a>
+                Welcome to VShop! 
+            </h1>
+            <nav>
+                <ul class = "nav__links">
+                    <li> <a href="vegetables.html"> Vegetables and Fruits </a></li>
+                    <li> <a href="dairy.html"> Dairy and Eggs </a></li>
+                    <li> <a href="beverages.html"> Beverages </a></li>
+                    <li> <a href="essentials.html"> Essentials </a></li>
+                </ul>
+            </nav>
+            <ul>
+                <a class = "cta" href="#"><button>Account</button></a>
+                <a class = "cta" href="#"><button>Check Out</button></a>
+            </ul>
+        </header>
+
+        <section class="product-list" >
+            <div class="container">
+                <div class="card">
+                    <div class="title"> 15 Water bottle pack  </div>
+
+                    <div class="image" id="imageBox"> 
+                        <p class="descriptionOff1" id="descriptionId1">
+                            1.79$/kg for the 15 bottles pack <br/></br>
+                            Convenient and refreshing,
+                            stay hydrated!
+                        </p>
+
+                        <img src="assets\water.png" class="imgOn1" id="imageId1"> </img>
+                        
+                    </div>
+
+                    <div class="buttons">
+                        <div>
+                            <button class="info-btn" id="infoBtn" onclick="handleInfo(0)">
+                                Info
+                                <script src="functions.js"></script>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <div class="title"> 3 Oasis juice box pack  </div>
+
+                    <div class="image" id="imageBox"> 
+                        <p class="descriptionOff1" id="descriptionId1">
+                            1.05$ for the 3 juice box pack </br></br>
+                            With so many juice flavours and no added sugar,
+                            you can enjoy a different delicious juice every day. 
+                        </p>
+
+                        <img src="assets\juice.webp" class="imgOn1" id="imageId1"> </img>
+                        
+                    </div>
+
+                    <div class="buttons">
+                        <div>
+                            <button class="info-btn" id="infoBtn" onclick="handleInfo(1)">
+                                Info
+                                <script src="functions.js"></script>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="title"> 6 Coca-Cola Pack  </div>
+
+                    <div class="image" id="imageBox"> 
+                        <p class="descriptionOff1" id="descriptionId1">
+                            3.77$ for the 6 Coca-cola bottles </br></br>
+                            Soda. Pop. Soft drink. Sparkling beverage. Carbonated drink.
+                        </p>
+
+                        <img src="assets\coca.jpg" class="imgOn1" id="imageId1"> </img>
+                        
+                    </div>
+
+                    <div class="buttons">
+                        <div>
+                            <button class="info-btn" id="infoBtn" onclick="handleInfo(2)">
+                                Info
+                                <script src="functions.js"></script>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+    </body>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+</html>

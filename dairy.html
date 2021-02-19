@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta charset = "UTF-8"/>
+        <title> Assignment 1 </title>
+        <style type="text/css">
+            h1 {color:#0d0d0d; font-weight: 1000px; text-align:start;} 
+            body {background-color: #e6f2ff;}
+        </style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header style="background-color: #F65058DA;">
+            <h1 style="font-size: 35px; font-family: 'Courier New', Courier, monospace;">
+                <a href="webpage.html">
+                    <img src="cart.png" width="50px" height="50px"> </img>
+                </a>
+                Welcome to VShop! 
+            </h1>
+            <nav>
+                <ul class = "nav__links">
+                    <li> <a href="vegetables.html"> Vegetables and Fruits </a></li>
+                    <li> <a href="dairy.html"> Dairy and Eggs </a></li>
+                    <li> <a href="beverages.html"> Beverages </a></li>
+                    <li> <a href="essentials.html"> Essentials </a></li>
+                </ul>
+            </nav>
+            <ul>
+                <a class = "cta" href="#"><button>Account</button></a>
+                <a class = "cta" href="#"><button>Check Out</button></a>
+            </ul>
+        </header>
+
+        <section class="product-list" >
+            <div class="container">
+                <div class="card">
+                    <div class="title"> Bag of Milk  </div>
+
+                    <div class="image" id="imageBox"> 
+                        <p class="descriptionOff1" id="descriptionId1">
+                            7.16$ for the bag </br></br>
+                            Québon 3,25% whole milk combine all the great
+                            taste and freshness of Quebec's milk with 
+                            many vitamins and minerals necessary to 
+                            the maintenance of good health.
+                        </p>
+
+                        <img src="assets\milk.png" class="imgOn1" id="imageId1"> </img>
+                        
+                    </div>
+
+                    <div class="buttons">
+                        <div>
+                            <button class="info-btn" id="infoBtn" onclick="handleInfo(0)">
+                                Info
+                                <script src="functions.js"></script>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="card">
+                    <div class="title"> Dozen Eggs  </div>
+
+                    <div class="image" id="imageBox"> 
+                        <p class="descriptionOff1" id="descriptionId1">
+                            2.97$ for the dozen <br/></br>
+                            Essentials your family needs with guaranteed, money-back
+                            quality. From breakfast to baking, Great Value eggs can’t be beat!
+                        </p>
+
+                        <img src="assets\eggs.png" class="imgOn1" id="imageId1"> </img>
+                        
+                    </div>
+
+                    <div class="buttons">
+                        <div>
+                            <button class="info-btn" id="infoBtn" onclick="handleInfo(1)">
+                                Info
+                                <script src="functions.js"></script>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class="add-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+    </body>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+</html>

@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flexbox;
+    align-self: auto;
+}
+
+li, a, button {
+    font-family: "Josefin", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style-position:inside;
+    list-style-type:disc;
+    border: 5px #87CEEB;
+    border-style:outset;
+    background-color: #e6f2ff;
+    border-radius: 15px;
+}
+
+button{
+    font-family: "Josefin", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #e6f2ff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 15px 0%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #87CEEB;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 140, 170, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 140, 170, 0.8);
+    
+}
+
+.product-list {
+    background-color: #DFE6E9;
+    padding: 3em;
+}
+
+.product-list .card {
+    background-color: e6f2ff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 10px 5px #b2bec3;
+    text-align: center;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.card .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card img {
+    width: 10em;
+    height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.card {
+    display: grid;
+}
+
+.card .image {
+    text-align: center;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    font-size: 20px;
+    font-weight: 1000px;
+}
+
+.add-btn {
+    background-color: #87CEEB;
+    border: none;
+    padding: 0.7em;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    width: 50%;
+}
+
+.add-btn:hover {
+    box-shadow: 0px 5px 5px #b2bec3;
+    color: beige;
+}
+
+.info-btn {
+    background-color: #87CEEB;
+    border: none;
+    padding: 0.7em;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    width: 50%;
+}
+
+.info-btn:hover {
+    box-shadow: 0px 5px 5px #b2bec3;
+    color: beige;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.imgOn1 {
+    visibility: visible;
+}
+
+.imgOff1 {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.descriptionOn1 {
+    visibility: visible;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.descriptionOff1 {
+    visibility: visible;
+    font-size: 0px;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display:flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+.cart-total-price {
+    color: rgb(16, 160, 16);
+    font-size: 36px;
+    font-weight: 1000px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
