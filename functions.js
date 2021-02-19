@@ -74,9 +74,18 @@ function addToCartClicked(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement.parentElement
     var title = shopItem.getElementsByClassName('title')[0].innerText
-    var priceTemp = shopItem.getElementsByClassName('descriptionOff1')[0].innerText
-    var price = priceTemp.substring(0,5);
-    var imageSrc = shopItem.getElementsByClassName('imgOn1')[0].src
+
+    if (shopItem.getElementsByClassName('descriptionOff1')[0] == undefined) {
+        var priceTemp = shopItem.getElementsByClassName('descriptionOn1')[0].innerText
+        var price = priceTemp.substring(0,5);
+        var imageSrc = shopItem.getElementsByClassName('imgOff1')[0].src
+    }
+    else {
+        var priceTemp = shopItem.getElementsByClassName('descriptionOff1')[0].innerText
+        var price = priceTemp.substring(0,5);
+        var imageSrc = shopItem.getElementsByClassName('imgOn1')[0].src
+    }
+    
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
 }
